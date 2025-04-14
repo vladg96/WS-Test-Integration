@@ -60,7 +60,7 @@ app.post('/webhook', async (req, res) => {
 
     // Wait for completion
     const outputs = await waitForCompletion(executeResponse.data.executionId);
-    const aiResponse = outputs['4_output', '6_output'];
+    const aiResponse = outputs['4-output'];
 
     // Send response via Twilio
     await client.messages.create({
