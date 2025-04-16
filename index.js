@@ -48,7 +48,8 @@ app.post('/webhook', async (req, res) => {
       {
         inputs: {
           userPrompt: incomingMsg
-        }
+        },
+        executionId: from
       },
       {
         headers: {
